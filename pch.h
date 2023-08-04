@@ -6,6 +6,10 @@
 
 #include <cstdlib>
 #include <cstring>
+#include <initializer_list>
+#include <iomanip>
+#include <random>
+#include <sstream>
 #include <type_traits>
 
 #endif // __cplusplus

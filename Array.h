@@ -59,6 +59,15 @@ public:
         return m_pData == nullptr;
     }
 
+    void fillWithRandom(T min, T max)
+    {
+        std::random_device rnd;
+        std::mt19937 gen(rnd());
+        std::uniform_real_distribution<T> dis(min, max);
+        for (int i = 0; i < m_numElements; ++i)
+            m_pData[i] = dis(gen);
+    }
+
     size_t getSizeInBytes() const
     {
         return m_numElements * sizeof(T);

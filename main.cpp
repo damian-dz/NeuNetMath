@@ -1,13 +1,18 @@
 #include <iostream>
 
-#include "Array.h"
+#include "NeuNetMath.h"
 
 using namespace std;
 
 int main()
 {
-    nnm::Array<float> a(10);
+    nnm::Vector<float> v(10);
 
-    cout << "Hello World!" << endl;
+    v.fillWithRandom(-1, 1);
+
+
+    cout << v;
+
+
     return 0;
 }
