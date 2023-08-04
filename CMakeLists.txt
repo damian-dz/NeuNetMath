@@ -8,6 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(NeuNetMath
     pch.h
     Array.h
+    Vector.h
+    NeuNetMath.h
     main.cpp
 )
 
